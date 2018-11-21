@@ -22,6 +22,7 @@ Available command line options are:
 * `-ClientSecret` Authentication password used in client auth. Available in Luna Portal.
 * `-ReqURL` Full request URL complete with API location and parameters. Must be URL encoded.
 * `-Body` Should contain the POST/PUT Body. The body should be structured like a JSON object. Example: $Body = '{ "name": "botlist2", "type": "IP", "list": ["201.22.44.12", "8.7.6.0/24"] }'
+* `-Maxbody` Maximum body content length. Defaults to 131072
 
 ## EXAMPLE
 

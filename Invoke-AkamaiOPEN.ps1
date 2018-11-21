@@ -141,8 +141,10 @@ If ($Body)
   [System.Net.ServicePointManager]::Expect100Continue = $false
 }
 
-#Check for valid Methods and required switches
+#Force requests to use TLS 1.2
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+
+#Check for valid Methods and required switches
 if ($Method -eq "PUT" -or $Method -eq "POST") {
   try {
     if ($Body) {
